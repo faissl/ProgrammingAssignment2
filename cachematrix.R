@@ -1,16 +1,4 @@
-## FUNCTION: Anonymous function to invert a matrix. Due to the processing-intense
-##           nature of a matrix inverse, the results will be cached and reused
-##           using a semaphore that preserves the state of whether or not the 
-##           matrix has been inverted or not. If it has, the currently cached
-##           copy of the matrix will be used. 
-##
-## ARGUMENTS: 
-##    x - a lame name for an argument that doesn't descriptively indicate it's 
-##        purpose. It is the matrix to be inverted. 
-##
-## RETURNS:
-##    A matrix that is the inverse of the supplied matrix "x". 
-## 
+###############################################################################
 ## ASSUMPTIONS: The calling routine will need to ensure that the matrix to be
 ##              inverted HAS NOT been modified since the last call to the 
 ##              makeCacheMatrix call. 
